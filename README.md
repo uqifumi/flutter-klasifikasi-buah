@@ -7,10 +7,10 @@ Aplikasi mobile untuk mengidentifikasi jenis buah berdasarkan gambar menggunakan
 <table>
   <tr>
     <td align="center">
-      <strong>Klasifikasi Pisang</strong>
+      <strong>Tampilan Utamag</strong>
     </td>
     <td align="center">
-      <strong>Klasifikasi Mangga</strong>
+      <strong>Klasifikasi Buah</strong>
     </td>
   </tr>
   <tr>
