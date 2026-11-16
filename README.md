@@ -129,8 +129,6 @@ Jalankan aplikasi:
 flutter run
 ```
 
-Ganti `USERNAME` dengan username GitHub pemilik repository.
-
 ## Lisensi
 
 Project ini dikembangkan untuk tujuan pembelajaran dan pengembangan aplikasi mobile berbasis Machine Learning.
