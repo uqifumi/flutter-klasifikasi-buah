@@ -38,10 +38,10 @@ Aplikasi mengenali empat jenis buah:
 
 | No. | Nama Buah | Label |
 |---|---|---|
-| 1 | Pisang | `banana` |
-| 2 | Jeruk | `orange` |
-| 3 | Mangga | `mango` |
-| 4 | Apel | `apple` |
+| 1 | Pisang | `Pisang` |
+| 2 | Jeruk | `Jeruk` |
+| 3 | Mangga | `Mangga` |
+| 4 | Apel | `Apel` |
 
 ## Teknologi dan Package
 
