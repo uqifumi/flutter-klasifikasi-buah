@@ -1,6 +1,6 @@
 # Aplikasi Klasifikasi Buah
 
-Aplikasi mobile untuk mengidentifikasi jenis buah berdasarkan gambar menggunakan model *Machine Learning*. Model klasifikasi dibuat dengan Google Teachable Machine, kemudian diintegrasikan ke aplikasi menggunakan TensorFlow Lite.
+Aplikasi mobile untuk klasifikasi foto/gambar buah menggunakan model *Machine Learning*. Model klasifikasi dibuat dengan Google Teachable Machine, kemudian diintegrasikan ke aplikasi menggunakan TensorFlow Lite.
 
 ## Screenshot Aplikasi
 
