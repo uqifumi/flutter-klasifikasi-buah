@@ -7,7 +7,7 @@ Aplikasi mobile untuk mengidentifikasi jenis buah berdasarkan gambar menggunakan
 <table>
   <tr>
     <td align="center">
-      <strong>Tampilan Utamag</strong>
+      <strong>Tampilan Utama</strong>
     </td>
     <td align="center">
       <strong>Klasifikasi Buah</strong>
