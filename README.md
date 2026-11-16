@@ -97,7 +97,7 @@ Pastikan Flutter SDK dan perangkat Android atau emulator sudah tersedia.
 Clone repository:
 
 ```bash
-git clone https://github.com/USERNAME/flutter-klasifikasi-buah.git
+git clone https://github.com/uqifumi/flutter-klasifikasi-buah.git
 ```
 
 Masuk ke direktori project:
