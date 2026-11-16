@@ -27,7 +27,7 @@ Aplikasi mobile untuk klasifikasi foto/gambar buah menggunakan model *Machine Le
 
 - Memilih gambar buah dari galeri.
 - Mengambil gambar secara langsung menggunakan kamera.
-- Menampilkan pratinjau gambar.
+- Menampilkan preview gambar.
 - Mengidentifikasi jenis buah menggunakan model TensorFlow Lite.
 - Menampilkan hasil klasifikasi dan nilai confidence.
 - Menjalankan proses klasifikasi secara lokal pada perangkat.
