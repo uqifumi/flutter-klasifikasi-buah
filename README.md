@@ -1,17 +1,125 @@
-# klasifikasi_buah
+# Aplikasi Klasifikasi Buah
 
-A new Flutter project.
+Aplikasi mobile untuk mengidentifikasi jenis buah berdasarkan gambar menggunakan model *Machine Learning*. Model klasifikasi dibuat dengan Google Teachable Machine, kemudian diintegrasikan ke aplikasi menggunakan TensorFlow Lite.
 
-## Getting Started
+## Screenshot Aplikasi
 
-This project is a starting point for a Flutter application.
+### Klasifikasi Pisang
 
-A few resources to get you started if this is your first Flutter project:
+![Hasil klasifikasi pisang](screenshots/klasifikasi-pisang.png)
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+### Klasifikasi Mangga
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Hasil klasifikasi mangga](screenshots/klasifikasi-mangga.png)
+
+## Fitur
+
+- Memilih gambar buah dari galeri.
+- Mengambil gambar secara langsung menggunakan kamera.
+- Menampilkan pratinjau gambar.
+- Mengidentifikasi jenis buah menggunakan model TensorFlow Lite.
+- Menampilkan hasil klasifikasi dan nilai confidence.
+- Menjalankan proses klasifikasi secara lokal pada perangkat.
+
+## Kelas Klasifikasi
+
+Aplikasi mengenali empat jenis buah:
+
+| No. | Nama Buah | Label |
+|---|---|---|
+| 1 | Pisang | `banana` |
+| 2 | Jeruk | `orange` |
+| 3 | Mangga | `mango` |
+| 4 | Apel | `apple` |
+
+## Teknologi dan Package
+
+- Flutter dan Dart
+- TensorFlow Lite
+- Google Teachable Machine
+- `tflite_flutter: ^0.12.1`
+- `image_picker: ^1.2.4`
+- `image: ^4.13.1`
+
+## Model Klasifikasi
+
+Model dibuat dan dilatih menggunakan Google Teachable Machine, kemudian diekspor ke format TensorFlow Lite agar dapat dijalankan pada perangkat Android.
+
+File model dan label disimpan dalam direktori:
+
+```text
+assets/model/
+├── model_unquant.tflite
+└── labels.txt
+```
+
+Spesifikasi input dan output model:
+
+| Komponen | Bentuk |
+|---|---|
+| Input tensor | `float32[1, 224, 224, 3]` |
+| Output tensor | `float32[1, 4]` |
+| Ukuran gambar input | 224 × 224 piksel |
+| Channel | RGB |
+| Jumlah kelas | 4 |
+
+Sebelum diklasifikasikan, gambar diproses agar sesuai dengan format input model. TensorFlow Lite kemudian menghasilkan nilai prediksi untuk masing-masing kelas buah. Kelas dengan nilai prediksi tertinggi digunakan sebagai hasil klasifikasi.
+
+## Struktur Project
+
+```text
+flutter-klasifikasi-buah/
+├── assets/
+│   └── model/
+│       ├── model_unquant.tflite
+│       └── labels.txt
+├── lib/
+│   ├── main.dart
+│   ├── screens/
+│   │   └── home_screen.dart
+│   ├── services/
+│   │   └── classifier_service.dart
+│   └── widgets/
+│       ├── image_preview.dart
+│       ├── image_picker_buttons.dart
+│       └── prediction_result.dart
+├── screenshots/
+│   ├── klasifikasi-pisang.png
+│   └── klasifikasi-mangga.png
+├── pubspec.yaml
+└── pubspec.lock
+```
+
+## Menjalankan Aplikasi
+
+Pastikan Flutter SDK dan perangkat Android atau emulator sudah tersedia.
+
+Clone repository:
+
+```bash
+git clone https://github.com/USERNAME/flutter-klasifikasi-buah.git
+```
+
+Masuk ke direktori project:
+
+```bash
+cd flutter-klasifikasi-buah
+```
+
+Unduh dependensi:
+
+```bash
+flutter pub get
+```
+
+Jalankan aplikasi:
+
+```bash
+flutter run
+```
+
+Ganti `USERNAME` dengan username GitHub pemilik repository.
+
+## Lisensi
+
+Project ini dikembangkan untuk tujuan pembelajaran dan pengembangan aplikasi mobile berbasis Machine Learning.
