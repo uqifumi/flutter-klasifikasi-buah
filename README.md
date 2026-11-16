@@ -15,10 +15,10 @@ Aplikasi mobile untuk mengidentifikasi jenis buah berdasarkan gambar menggunakan
   </tr>
   <tr>
     <td align="center">
-      <img src="screenshots/klasifikasi-pisang.png" width="250" alt="Hasil klasifikasi pisang">
+      <img src="screenshots/screenshot001.png" width="250" alt="Hasil klasifikasi pisang">
     </td>
     <td align="center">
-      <img src="screenshots/klasifikasi-mangga.png" width="250" alt="Hasil klasifikasi mangga">
+      <img src="screenshots/screenshot002.png" width="250" alt="Hasil klasifikasi mangga">
     </td>
   </tr>
 </table>
