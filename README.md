@@ -95,8 +95,8 @@ flutter-klasifikasi-buah/
 │       ├── image_picker_buttons.dart
 │       └── prediction_result.dart
 ├── screenshots/
-│   ├── klasifikasi-pisang.png
-│   └── klasifikasi-mangga.png
+│   ├── screenshot001.png
+│   └── screenshot002.png
 ├── pubspec.yaml
 └── pubspec.lock
 ```
