@@ -4,13 +4,24 @@ Aplikasi mobile untuk mengidentifikasi jenis buah berdasarkan gambar menggunakan
 
 ## Screenshot Aplikasi
 
-### Klasifikasi Pisang
-
-![Hasil klasifikasi pisang](screenshots/klasifikasi-pisang.png)
-
-### Klasifikasi Mangga
-
-![Hasil klasifikasi mangga](screenshots/klasifikasi-mangga.png)
+<table>
+  <tr>
+    <td align="center">
+      <strong>Klasifikasi Pisang</strong>
+    </td>
+    <td align="center">
+      <strong>Klasifikasi Mangga</strong>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="screenshots/klasifikasi-pisang.png" width="250" alt="Hasil klasifikasi pisang">
+    </td>
+    <td align="center">
+      <img src="screenshots/klasifikasi-mangga.png" width="250" alt="Hasil klasifikasi mangga">
+    </td>
+  </tr>
+</table>
 
 ## Fitur
 
